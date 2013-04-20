@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+   <%= stylesheet_link_tag    "bootstrap", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  
+</head>
+<body>
+	
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/">Arrate's app</a>
+      <ul class="nav">
+        <li class="active"><a href="/books">Books</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <br/>
+  <br/>
+  <br/>
+  <div class="hero-unit">
+    <h1>Arrate's SF and F Library
+    </h1>
+  </div>
+  <%= yield %>
+</div>
+<footer>
+  <div class="container">
+    Rails Girls 2013
+  </div>
+</footer>
+</body>
+</html>
