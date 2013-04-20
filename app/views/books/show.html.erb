@@ -20,7 +20,7 @@
   <%= @book.plot %>
 </p>
 
-<%= image_tag(@book.picture_url, :width => 600, :class => "img-circle") if @book.picture.present? %>
+<%= image_tag(@book.picture_url, :width => 600, :class => "img-polaroid") if @book.picture.present? %>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
